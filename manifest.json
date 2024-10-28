@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Print, Scroll, Pause, Modify Hex, Close Tabs",
+  "version": "1.7",
+  "description": "Prints all open tabs and closes them after printing.",
+  "permissions": [
+    "tabs",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
